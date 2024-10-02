@@ -9,57 +9,83 @@
 }
 
 .container {
-    padding-top: 2%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
-    height: 100%;
-    position: relative;
+    width: 90%;
+    margin: 0 auto;
 }
 
-.course-info {
+header .course-info {
     display: flex;
     padding-top: 10%;
     list-style-type: none;
     gap: 25px;
 }
 
-.course-info .item {
+header  .course-info .item {
     font-size: 20px;
 }
 
-.hero-block {
+#hero .hero-block {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; 
+    gap: 25px;
 }
 
-.hero-block .description {
-    width: 50%;
+#hero .hero-block .description {
+    width: 55%;
     padding: 0;
     margin: 0;
 }
 
-.hero-block img {
-    object-fit: contain;
-    height: 20em;
-    margin-top: 16px;
-    max-width: 40%; 
-}
-
-.hero-block .description h1 {
+#hero .hero-block .description h1 {
     font-family: Roboto Slab;
     font-size: 80px;
     margin: 0;
+    margin-bottom: 20px;
+    line-height: 1em;
 }
 
-main {
+#hero .hero-block .description p {
+    font-size: 25px;
+}
+
+#hero  .hero-block img {
+    position: relative;
+    width: 300px;
+}
+
+
+
+#hero .image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    margin-bottom: 40px;
+}
+
+#hero .image-container img {
+    position: relative;
+    z-index: 1;
+}
+
+#hero .image-container .shadow {
+    position: absolute;
+    background-color: #EFEFEF;
+    border-radius: 50%;
+    aspect-ratio: 22/5;
+    width: 250px;
+    bottom: -20px;
+    left: calc(50% + 20px);
+    transform: translateX(-50%);
+}
+
+#hero  {
     display: flex;
     flex-direction: column;
 }
 
-.quote-block {
+#hero .quote-block {
     background-color: #1E4681;
     color: white;
     padding: 16px;
@@ -71,60 +97,96 @@ main {
     width: 100%;
 }
 
-.quote-block .text {
+#hero .quote-block .text {
     font-family: Roboto Slab;
 }
 
-.quote-block .author {
+#hero .quote-block .author {
     margin-top: 10px;
     text-align: right;
 }
 
-@media (max-width: 830px) {
-    .hero-block .description {
-        width: 60% 
+
+@media (max-width: 991px) {
+    #hero .image-container img {
+        width: 200px;
     }
 
-    .hero-block img {
-        max-width: 40%; 
-        min-width: 200px; 
-    }
-
-    .hero-block .description h1 {
+    #hero .hero-block .description h1 {
         font-size: 50px;
     }
 
-    .course-info .item {
+    #hero .hero-block .description p {
+        font-size: 20px;
+    }
+
+    #hero .course-info .item {
         font-size: 16px;
     }
 
-    .quote-block {
+    #hero .image-container .shadow {
+        width: 200px;
+    }
+
+
+    #hero .quote-block {
         max-width: 350px;
     }
 
-    .quote-block .text {
+    #hero .quote-block .text {
         font-size: 16px;
     }
 
-    .quote-block .author {
+    #hero .quote-block .author {
         font-size: 14px;
     }
+
+    #hero .image-container .shadow {
+        bottom: -15px;
+        width: 230px;
+        height: 40px;
+    }
+
+
 }
 
-@media (max-width: 375px) {
-    .hero-block {
-        flex-direction: row;
-        justify-content: space-between; 
+@media (max-width: 600px) {
+    #hero .hero-block {
+        justify-content: space-between;
+        flex-direction: column;
         align-items: flex-start;
     }
 
-    .hero-block .description {
-        width: 60%; 
+    #hero  .hero-block .description h1 {
+        font-size: 40px;
     }
 
-    .hero-block img {
-        max-width: 35%;
-        margin-left: auto; 
-        margin-top: 10px; 
+    #hero .image-container .shadow {
+        width: 180px;
+        bottom: -20px;
+        left: auto;
+        right: -10px;
+        transform: translateX(0);
     }
+
+    #hero .hero-block .description p {
+        font-size: 15px;
+    }
+
+
+    #hero .image-container {
+        justify-content: end;
+        width: 100%;
+    }
+
+    #hero .hero-block .description {
+        width: 100%;
+    }
+
+    #hero .image-container img {
+        margin-top: 10px;
+        width: 180px;
+    }
+
+
 }
