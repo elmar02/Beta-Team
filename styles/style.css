@@ -711,7 +711,7 @@ header  .course-info .item {
 }
 
 #card-section .card-text{
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
