@@ -418,6 +418,104 @@ header  .course-info .item {
   text-align: left;
 }
 
+
+/*Qara Part*/
+#contact {
+  display: flex;
+  justify-content: center;
+  background-color: #9dc9c8;
+  width: 100%;
+}
+
+.contact-container {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+}
+.contact-container > h1 {
+  font-family: Roboto Slab;
+  
+ 
+.contact-levels {
+  display: flex;
+  gap: 70px;
+  font-family: Roboto;
+}
+
+.contact-level {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-level p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18.25px;
+  text-align: left;
+}
+.contact-level h4 {
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 25.35px;
+  text-align: left;
+}
+.contact-content h1 {
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 25.35px;
+  text-align: left;
+}
+.contact-content p {
+  font-family: Roboto;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 81.11px;
+  text-align: left;
+}
+
+/* ----------- S E C O N D --------- F O O T E R ----------- */
+footer {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footer-container {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer-socials {
+  display: flex;
+  gap: 18px;
+}
+.footer-social {
+  list-style: none;
+}
+
+.footer-right {
+
+
 .faq-container ul {
   font-family: Roboto;
 }
@@ -482,6 +580,27 @@ header  .course-info .item {
   gap: 20px;
 }
 
+.footer-right-row {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.footer-right-row span {
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 25.35px;
+  text-align: left;
+}
+.footer-right-row img {
+  width: 27px;
+}
+
+.footer-bottom {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18.25px;
 .testimonials-card-content h1 {
   font-size: 30px;
   font-weight: 700;
@@ -490,6 +609,24 @@ header  .course-info .item {
 }
 
 @media screen and (max-width: 830px) {
+  #contact {
+    display: flex;
+    justify-content: center;
+    background-color: #9dc9c8;
+    width: 100%;
+  }
+  .container {
+    width: 90%;
+  }
+  .contact-container {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+  }
+  .contact-container > h1 {
+    font-family: Roboto Slab;
+
   #faq,
   #testimonials {
     display: flex;
@@ -514,6 +651,133 @@ header  .course-info .item {
     line-height: 32.44px;
     text-align: left;
   }
+  .contact-levels {
+    display: flex;
+    gap: 70px;
+    font-family: Roboto;
+  }
+
+  .contact-level {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-level p {
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10.14px;
+    text-align: left;
+  }
+  .contact-level h4 {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14.19px;
+    text-align: left;
+  }
+  .contact-content h1 {
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25.35px;
+    text-align: left;
+  }
+  .contact-content p {
+    font-family: Roboto;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 46.64px;
+    text-align: left;
+  }
+
+  /* ----------- S E C O N D --------- F O O T E R ----------- */
+  footer {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .footer-container {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-socials {
+    display: flex;
+    gap: 18px;
+  }
+  .footer-social {
+    list-style: none;
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-right-row {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+  .footer-right-row span {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14.19px;
+    text-align: left;
+  }
+  .footer-right-row img {
+    width: 27px;
+  }
+
+  .footer-bottom {
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10.14px;
+    text-align: left;
+  }
+}
+
+/* R E S P O N S I V E ------ M O B I L E */
+
+@media screen and (max-width: 500px) {
+  #contact {
+    display: flex;
+    justify-content: center;
+    background-color: #9dc9c8;
+    width: 100%;
+  }
+  .container {
+    width: 90%;
+  }
+  .contact-container {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .contact-container > h1 {
+    font-family: Roboto Slab;
 
   .faq-container ul {
     font-family: Roboto;
@@ -621,6 +885,92 @@ header  .course-info .item {
     line-height: 26.36px;
     text-align: left;
   }
+  .contact-levels {
+    display: flex;
+    gap: 40px;
+    font-family: Roboto;
+  }
+
+  .contact-level {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .contact-level p {
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10.14px;
+    text-align: left;
+  }
+  .contact-level h4 {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12.17px;
+    text-align: left;
+  }
+  .contact-content h1 {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12.17px;
+    text-align: left;
+  }
+  .contact-content p {
+    font-family: Roboto;
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 37.51px;
+    text-align: left;
+  }
+
+  /* ----------- S E C O N D --------- F O O T E R ----------- */
+  footer {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .footer-image img {
+    width: 54px;
+  }
+  .footer-social img {
+    width: 15px;
+  }
+
+  .footer-container {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-socials {
+    display: flex;
+    gap: 18px;
+  }
+  .footer-social {
+    list-style: none;
+  }
+
+  .footer-right {
 
   .faq-container ul {
     font-family: Roboto;
@@ -686,6 +1036,29 @@ header  .course-info .item {
     gap: 10px;
   }
 
+  .footer-right-row {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+  .footer-right-row span {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12.17px;
+    text-align: left;
+  }
+  .footer-right-row img {
+    width: 13px;
+  }
+  .footer-bottom {
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10.14px;
+    text-align: left;
+  }
+}
   .testimonials-card-content h1 {
     font-size: 14px;
     font-weight: 700;
