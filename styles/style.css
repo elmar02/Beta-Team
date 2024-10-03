@@ -9,7 +9,6 @@
 .container {
     width: 90%;
     margin: 0 auto;
-    padding: 30px 0;
 }
 
 section{
@@ -400,11 +399,6 @@ header  .course-info .item {
   align-items: center;
 }
 
-.container {
-  padding: 40px 0;
-  width: 90%;
-}
-
 .faq-container {
   display: flex;
   flex-direction: column;
@@ -418,15 +412,368 @@ header  .course-info .item {
   text-align: left;
 }
 
+.faq-container ul {
+  font-family: Roboto;
+}
 
-/*Qara Part*/
+.faq-container ul li {
+  list-style-position: inside;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+}
+
+#testimonials {
+  background-color: #efefef;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+}
+
+.testimonials-top {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 55.76px;
+  text-align: left;
+}
+
+.testimonials-bottom {
+  display: flex;
+}
+
+.testimonials-card {
+  background-color: white;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  box-shadow: 1px 1px 20px 0px #00000040;
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.testimonials-card p {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+.testimonials-card-bottom {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.testimonials-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonials-card-content h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30.42px;
+  text-align: left;
+}
+
+@media screen and (max-width: 830px) {
+  #faq,
+  #testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .faq-container h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32.44px;
+    text-align: left;
+  }
+
+  .faq-container ul {
+    font-family: Roboto;
+  }
+
+  .faq-container ul li {
+    list-style-position: inside;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+  }
+
+  .testimonials-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .testimonials-top {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32.44px;
+    text-align: left;
+  }
+
+  .testimonials-bottom {
+    display: flex;
+  }
+
+  .testimonials-card {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 1px 1px 20px 0px #00000040;
+    border-radius: 30px;
+    padding: 26px;
+  }
+
+  .testimonials-card p {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+  }
+
+  .testimonials-card-bottom {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .testimonials-card-bottom > img {
+    width: 110px;
+  }
+
+  .testimonials-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .testimonials-card-content h1 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 17.24px;
+    text-align: left;
+  }
+  .testimonials-card-content img {
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .testimonials-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #faq,
+  #testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .faq-container h1 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26.36px;
+    text-align: left;
+  }
+
+  .faq-container ul {
+    font-family: Roboto;
+  }
+
+  .faq-container ul li {
+    list-style-position: inside;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+  }
+
+  .testimonials-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .testimonials-top {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26.36px;
+    text-align: left;
+  }
+
+  .testimonials-bottom {
+    display: flex;
+  }
+
+  .testimonials-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 1px 1px 20px 0px #00000040;
+    border-radius: 30px;
+    padding: 26px;
+  }
+
+  .testimonials-card p {
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+  }
+
+  .testimonials-card-bottom {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .testimonials-card-bottom > img {
+    width: 80px;
+  }
+
+  .testimonials-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .testimonials-card-content h1 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14.19px;
+    text-align: left;
+  }
+  .testimonials-card-content img {
+    width: 20px;
+  }
+}
+
+/*Lamia-Part*/
+
+ #card-section{
+    font-family: "Roboto", sans-serif;
+}
+
+#card-section .cards-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+#card-section .card{
+    -webkit-box-shadow: 3px 2px 29px 0px rgba(191,185,191,1);
+    -moz-box-shadow: 3px 2px 29px 0px rgba(191,185,191,1);
+    box-shadow: 3px 2px 29px 0px rgba(191,185,191,1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+}
+
+#card-section .cardimage{
+    width: 100%;
+}
+
+#card-section .cardimage img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#card-section .card-text{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+#card-section .name{
+    font-size: 55px;
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 10px;
+    padding-bottom: 50px;
+}
+#card-section .p{
+    font-size: 25px;
+}
+
+#card-section .h{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* Planşet */
+@media screen and (max-width:991px) {
+    #card-section .p {
+        font-size: 14px;
+    }
+
+    #card-section .h {
+        font-size: 17px;
+    }
+    #card-section .name{
+        font-size: 45px;
+    }
+}
+
+/* Mobile */
+@media screen and (min-width:0px) and (max-width:600px) {
+    #card-section .p {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    #card-section .h {
+        font-size: 21px;
+    }
+
+    #card-section .cards-box {
+        grid-template-columns: 1fr;
+    }
+    #card-section .name{
+        font-size: 30px;
+    }
+}
+
+/* -----------F I R S T----------F O O T E R ------------- */
 #contact {
   display: flex;
   justify-content: center;
   background-color: #9dc9c8;
   width: 100%;
 }
-
 .contact-container {
   padding: 100px 0;
   display: flex;
@@ -435,8 +782,11 @@ header  .course-info .item {
 }
 .contact-container > h1 {
   font-family: Roboto Slab;
-  
- 
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 55.76px;
+  text-align: left;
+}
 .contact-levels {
   display: flex;
   gap: 70px;
@@ -514,67 +864,6 @@ footer {
 }
 
 .footer-right {
-
-
-.faq-container ul {
-  font-family: Roboto;
-}
-
-.faq-container ul li {
-  list-style-position: inside;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 36px;
-  text-align: left;
-}
-
-#testimonials {
-  background-color: #efefef;
-}
-
-.testimonials-container {
-  display: flex;
-  flex-direction: column;
-  gap: 75px;
-}
-
-.testimonials-top {
-  font-size: 55px;
-  font-weight: 700;
-  line-height: 55.76px;
-  text-align: left;
-}
-
-.testimonials-bottom {
-  display: flex;
-}
-
-.testimonials-card {
-  background-color: white;
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  box-shadow: 1px 1px 20px 0px #00000040;
-  border-radius: 30px;
-  padding: 40px;
-}
-
-.testimonials-card p {
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  text-align: left;
-}
-
-.testimonials-card-bottom {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.testimonials-card-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -601,10 +890,6 @@ footer {
   font-size: 18px;
   font-weight: 400;
   line-height: 18.25px;
-.testimonials-card-content h1 {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 30.42px;
   text-align: left;
 }
 
@@ -615,9 +900,7 @@ footer {
     background-color: #9dc9c8;
     width: 100%;
   }
-  .container {
-    width: 90%;
-  }
+
   .contact-container {
     padding: 100px 0;
     display: flex;
@@ -626,26 +909,6 @@ footer {
   }
   .contact-container > h1 {
     font-family: Roboto Slab;
-
-  #faq,
-  #testimonials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .container {
-    padding: 20px 0;
-    width: 90%;
-  }
-
-  .faq-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .faq-container h1 {
     font-size: 32px;
     font-weight: 700;
     line-height: 32.44px;
@@ -767,9 +1030,7 @@ footer {
     background-color: #9dc9c8;
     width: 100%;
   }
-  .container {
-    width: 90%;
-  }
+
   .contact-container {
     padding: 50px 0;
     display: flex;
@@ -778,108 +1039,6 @@ footer {
   }
   .contact-container > h1 {
     font-family: Roboto Slab;
-
-  .faq-container ul {
-    font-family: Roboto;
-  }
-
-  .faq-container ul li {
-    list-style-position: inside;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    text-align: left;
-  }
-
-  .testimonials-container {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .testimonials-top {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 32.44px;
-    text-align: left;
-  }
-
-  .testimonials-bottom {
-    display: flex;
-  }
-
-  .testimonials-card {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    box-shadow: 1px 1px 20px 0px #00000040;
-    border-radius: 30px;
-    padding: 26px;
-  }
-
-  .testimonials-card p {
-    font-family: Roboto;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: left;
-  }
-
-  .testimonials-card-bottom {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-  }
-
-  .testimonials-card-bottom > img {
-    width: 110px;
-  }
-
-  .testimonials-card-content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .testimonials-card-content h1 {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 17.24px;
-    text-align: left;
-  }
-  .testimonials-card-content img {
-    width: 20px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .testimonials-card {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  #faq,
-  #testimonials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .container {
-    padding: 20px 0;
-    width: 80%;
-  }
-
-  .faq-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .faq-container h1 {
     font-size: 26px;
     font-weight: 700;
     line-height: 26.36px;
@@ -971,66 +1130,6 @@ footer {
   }
 
   .footer-right {
-
-  .faq-container ul {
-    font-family: Roboto;
-  }
-
-  .faq-container ul li {
-    list-style-position: inside;
-    font-family: Roboto;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: left;
-  }
-
-  .testimonials-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .testimonials-top {
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 26.36px;
-    text-align: left;
-  }
-
-  .testimonials-bottom {
-    display: flex;
-  }
-
-  .testimonials-card {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    box-shadow: 1px 1px 20px 0px #00000040;
-    border-radius: 30px;
-    padding: 26px;
-  }
-
-  .testimonials-card p {
-    font-family: Roboto;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 15px;
-    text-align: left;
-  }
-
-  .testimonials-card-bottom {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-  }
-
-  .testimonials-card-bottom > img {
-    width: 80px;
-  }
-
-  .testimonials-card-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1058,100 +1157,4 @@ footer {
     line-height: 10.14px;
     text-align: left;
   }
-}
-  .testimonials-card-content h1 {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 14.19px;
-    text-align: left;
-  }
-  .testimonials-card-content img {
-    width: 20px;
-  }
-}
-
-/*Lamia-Part*/
-
- #card-section{
-    font-family: "Roboto", sans-serif;
-}
-
-#card-section .cards-box{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-#card-section .card{
-    -webkit-box-shadow: 3px 2px 29px 0px rgba(191,185,191,1);
-    -moz-box-shadow: 3px 2px 29px 0px rgba(191,185,191,1);
-    box-shadow: 3px 2px 29px 0px rgba(191,185,191,1);
-    display: flex;
-    flex-direction: column;
-    border-radius: 10%;
-}
-
-#card-section .cardimage{
-    width: 100%;
-}
-
-#card-section .cardimage img{
-    width: 100%;
-    object-fit: cover;
-}
-
-#card-section .card-text{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-}
-#card-section .name{
-    font-size: 55px;
-    font-weight: bold;
-    font-family: "Roboto Slab", serif;
-    margin-bottom: 10px;
-    padding-bottom: 50px;
-}
-#card-section .p{
-    font-size: 25px;
-}
-
-#card-section .h{
-    font-weight: bold;
-    font-size: 30px;
-}
-
-/* Planşet */
-@media screen and (max-width:991px) {
-    #card-section .p {
-        font-size: 14px;
-    }
-
-    #card-section .h {
-        font-size: 17px;
-    }
-    #card-section .name{
-        font-size: 45px;
-    }
-}
-
-/* Mobile */
-@media screen and (min-width:0px) and (max-width:600px) {
-    #card-section .p {
-        font-size: 18px;
-        padding-top: 20px;
-    }
-
-    #card-section .h {
-        font-size: 21px;
-    }
-
-    #card-section .cards-box {
-        grid-template-columns: 1fr;
-    }
-    #card-section .name{
-        font-size: 30px;
-    }
 }
