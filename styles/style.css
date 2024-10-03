@@ -1,21 +1,432 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-/* -----------F I R S T----------F O O T E R ------------- */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+section{
+    padding: 50px 0;
+}
+
+header{
+    padding: 10px;
+}
+
+/*Fidan-Part*/
+header .course-info {
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+}
+
+header  .course-info .item {
+    font-size: 20px;
+}
+
+#hero .hero-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+#hero .hero-block .description {
+    width: 55%;
+    padding: 0;
+    margin: 0;
+}
+
+#hero .hero-block .description h1 {
+    font-family: Roboto Slab;
+    font-size: 80px;
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 1em;
+}
+
+#hero .hero-block .description p {
+    font-size: 25px;
+}
+
+#hero  .hero-block img {
+    position: relative;
+    width: 300px;
+}
+
+
+
+#hero .image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    margin-bottom: 40px;
+}
+
+#hero .image-container img {
+    position: relative;
+    z-index: 1;
+}
+
+#hero .image-container .shadow {
+    position: absolute;
+    background-color: #EFEFEF;
+    border-radius: 50%;
+    aspect-ratio: 22/5;
+    width: 250px;
+    bottom: -20px;
+    left: calc(50% + 20px);
+    transform: translateX(-50%);
+}
+
+#hero  {
+    display: flex;
+    flex-direction: column;
+}
+
+#hero .quote-block {
+    background-color: #1E4681;
+    color: white;
+    padding: 16px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#hero .quote-block .text {
+    font-family: Roboto Slab;
+}
+
+#hero .quote-block .author {
+    margin-top: 10px;
+    text-align: right;
+}
+
+
+@media (max-width: 991px) {
+    #hero .image-container img {
+        width: 200px;
+    }
+
+    #hero .hero-block .description h1 {
+        font-size: 50px;
+    }
+
+    #hero .hero-block .description p {
+        font-size: 20px;
+    }
+
+    #hero .course-info .item {
+        font-size: 16px;
+    }
+
+    #hero .image-container .shadow {
+        width: 200px;
+    }
+
+
+    #hero .quote-block {
+        max-width: 350px;
+    }
+
+    #hero .quote-block .text {
+        font-size: 16px;
+    }
+
+    #hero .quote-block .author {
+        font-size: 14px;
+    }
+
+    #hero .image-container .shadow {
+        bottom: -15px;
+        width: 230px;
+        height: 40px;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    #hero .hero-block {
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #hero  .hero-block .description h1 {
+        font-size: 40px;
+    }
+
+    #hero .image-container .shadow {
+        width: 180px;
+        bottom: -20px;
+        left: auto;
+        right: -10px;
+        transform: translateX(0);
+    }
+
+    #hero .hero-block .description p {
+        font-size: 15px;
+    }
+
+
+    #hero .image-container {
+        justify-content: end;
+        width: 100%;
+    }
+
+    #hero .hero-block .description {
+        width: 100%;
+    }
+
+    #hero .image-container img {
+        margin-top: 10px;
+        width: 180px;
+    }
+
+
+}
+
+/*Elmar-Part*/
+/*service section*/
+#service,
+#format {
+    font-size: .8rem;
+}
+
+#service p {
+    font-family: "Roboto", system-ui;
+    line-height: 1.4rem;
+}
+
+#service .title,
+#format .title {
+    font-family: "Roboto Slab", system-ui;
+    padding-bottom: .7em;
+    font-size: 2.4em;
+}
+
+#service .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#service .img-box img {
+    position: relative;
+}
+
+#service .upper-box .img-box img {
+    width: 146px;
+}
+
+#service .upper-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+#service .upper-box div {
+    width: 100%;
+}
+
+#service .img-box .platform {
+    position: absolute;
+    background-color: #EFEFEF;
+    border-radius: 50%;
+    aspect-ratio: 22/5;
+}
+
+#service .upper-box .img-box .platform {
+    bottom: -20px;
+    width: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#service .lower-box .img-box .platform {
+    bottom: -10px;
+    left: 15px;
+    width: 130px;
+}
+
+#service .lower-box {
+    margin-top: 50px;
+    display: grid;
+    gap: 1.6rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#service .lower-box h3 {
+    font-family: "Roboto Slab", system-ui;
+    font-size: 1.2em;
+}
+
+#service .lower-box p {
+    font-size: 0.9em;
+}
+
+#service .lower-box .img-box {
+    display: none;
+    justify-content: start;
+}
+
+#service .lower-box .img-box img {
+    width: 146px;
+}
+
+/*format section*/
+#format .box {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+#format .item {
+    width: 75%;
+}
+
+#format .item h2,
+#format .item p {
+    font-family: "Roboto", system-ui;
+}
+
+#format .item h2 {
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+    color: #1E4681;
+}
+
+#format .item p {
+    font-size: .8rem;
+}
+
+/* Tablet */
+@media (min-width: 601px) {
+
+    #service,
+    #format {
+        font-size: 1rem;
+    }
+
+    #service .upper-box {
+        flex-direction: row;
+    }
+
+    #service .upper-box div {
+        width: 50%;
+    }
+
+    #service .upper-box .img-box img {
+        width: 186px;
+    }
+
+    #service .upper-box .img-box .platform {
+        width: 280px;
+    }
+
+    #service .lower-box {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #service .lower-box .img-box {
+        display: flex;
+    }
+
+    #format .item {
+        width: calc(100%/3);
+    }
+
+    #format .box {
+        flex-direction: row;
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+
+    #service,
+    #format {
+        font-size: 1.2rem;
+    }
+
+    #service .upper-box .img-box img {
+        width: 216px;
+    }
+
+    #service .upper-box .img-box .platform {
+        width: 300px;
+    }
+
+    #service .lower-box .img-box img {
+        width: 200px;
+    }
+
+    #service .lower-box .img-box .platform {
+        width: 160px;
+        left: 30px;
+        bottom: -15px;
+    }
+
+    #format .item {
+        font-size: 2rem;
+    }
+
+    #format .item p {
+        font-size: 1.3rem;
+    }
+}
+
+/*Fakhri-Part*/
+#faq,
+#testimonials {
+   font-family: Roboto Slab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 40px 0;
+  width: 90%;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.faq-container h1 {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 55.76px;
+  text-align: left;
+}
+
+
+/*Qara Part*/
 #contact {
   display: flex;
   justify-content: center;
   background-color: #9dc9c8;
   width: 100%;
 }
-.container {
-  width: 90%;
-}
+
 .contact-container {
   padding: 100px 0;
   display: flex;
@@ -24,11 +435,8 @@
 }
 .contact-container > h1 {
   font-family: Roboto Slab;
-  font-size: 55px;
-  font-weight: 700;
-  line-height: 55.76px;
-  text-align: left;
-}
+  
+ 
 .contact-levels {
   display: flex;
   gap: 70px;
@@ -106,6 +514,67 @@ footer {
 }
 
 .footer-right {
+
+
+.faq-container ul {
+  font-family: Roboto;
+}
+
+.faq-container ul li {
+  list-style-position: inside;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+}
+
+#testimonials {
+  background-color: #efefef;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+}
+
+.testimonials-top {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 55.76px;
+  text-align: left;
+}
+
+.testimonials-bottom {
+  display: flex;
+}
+
+.testimonials-card {
+  background-color: white;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  box-shadow: 1px 1px 20px 0px #00000040;
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.testimonials-card p {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+.testimonials-card-bottom {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.testimonials-card-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -132,6 +601,10 @@ footer {
   font-size: 18px;
   font-weight: 400;
   line-height: 18.25px;
+.testimonials-card-content h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30.42px;
   text-align: left;
 }
 
@@ -153,6 +626,26 @@ footer {
   }
   .contact-container > h1 {
     font-family: Roboto Slab;
+
+  #faq,
+  #testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    padding: 20px 0;
+    width: 90%;
+  }
+
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .faq-container h1 {
     font-size: 32px;
     font-weight: 700;
     line-height: 32.44px;
@@ -285,6 +778,108 @@ footer {
   }
   .contact-container > h1 {
     font-family: Roboto Slab;
+
+  .faq-container ul {
+    font-family: Roboto;
+  }
+
+  .faq-container ul li {
+    list-style-position: inside;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+  }
+
+  .testimonials-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .testimonials-top {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32.44px;
+    text-align: left;
+  }
+
+  .testimonials-bottom {
+    display: flex;
+  }
+
+  .testimonials-card {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 1px 1px 20px 0px #00000040;
+    border-radius: 30px;
+    padding: 26px;
+  }
+
+  .testimonials-card p {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+  }
+
+  .testimonials-card-bottom {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .testimonials-card-bottom > img {
+    width: 110px;
+  }
+
+  .testimonials-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .testimonials-card-content h1 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 17.24px;
+    text-align: left;
+  }
+  .testimonials-card-content img {
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .testimonials-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #faq,
+  #testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    padding: 20px 0;
+    width: 80%;
+  }
+
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .faq-container h1 {
     font-size: 26px;
     font-weight: 700;
     line-height: 26.36px;
@@ -376,6 +971,66 @@ footer {
   }
 
   .footer-right {
+
+  .faq-container ul {
+    font-family: Roboto;
+  }
+
+  .faq-container ul li {
+    list-style-position: inside;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+  }
+
+  .testimonials-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .testimonials-top {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26.36px;
+    text-align: left;
+  }
+
+  .testimonials-bottom {
+    display: flex;
+  }
+
+  .testimonials-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 1px 1px 20px 0px #00000040;
+    border-radius: 30px;
+    padding: 26px;
+  }
+
+  .testimonials-card p {
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+  }
+
+  .testimonials-card-bottom {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .testimonials-card-bottom > img {
+    width: 80px;
+  }
+
+  .testimonials-card-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -403,4 +1058,100 @@ footer {
     line-height: 10.14px;
     text-align: left;
   }
+}
+  .testimonials-card-content h1 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14.19px;
+    text-align: left;
+  }
+  .testimonials-card-content img {
+    width: 20px;
+  }
+}
+
+/*Lamia-Part*/
+
+ #card-section{
+    font-family: "Roboto", sans-serif;
+}
+
+#card-section .cards-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+#card-section .card{
+    -webkit-box-shadow: 3px 2px 29px 0px rgba(191,185,191,1);
+    -moz-box-shadow: 3px 2px 29px 0px rgba(191,185,191,1);
+    box-shadow: 3px 2px 29px 0px rgba(191,185,191,1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+}
+
+#card-section .cardimage{
+    width: 100%;
+}
+
+#card-section .cardimage img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#card-section .card-text{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+#card-section .name{
+    font-size: 55px;
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 10px;
+    padding-bottom: 50px;
+}
+#card-section .p{
+    font-size: 25px;
+}
+
+#card-section .h{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* Planşet */
+@media screen and (max-width:991px) {
+    #card-section .p {
+        font-size: 14px;
+    }
+
+    #card-section .h {
+        font-size: 17px;
+    }
+    #card-section .name{
+        font-size: 45px;
+    }
+}
+
+/* Mobile */
+@media screen and (min-width:0px) and (max-width:600px) {
+    #card-section .p {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    #card-section .h {
+        font-size: 21px;
+    }
+
+    #card-section .cards-box {
+        grid-template-columns: 1fr;
+    }
+    #card-section .name{
+        font-size: 30px;
+    }
 }
