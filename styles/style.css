@@ -1,198 +1,232 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
-section{
-    padding: 50px 0;
+section {
+  padding: 50px 0;
 }
 
-header{
-    padding: 10px;
+header {
+  padding: 10px;
 }
 
 /*Fidan-Part*/
-header .course-info {
-    display: flex;
-    list-style-type: none;
-    gap: 25px;
+header .header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
 }
 
-header  .course-info .item {
-    font-size: 20px;
+header .header-logo {
+  width: 112px;
+}
+
+header .course-info {
+  display: flex;
+  list-style-type: none;
+  gap: 25px;
+}
+
+header .course-info .item {
+  font-size: 20px;
 }
 
 #hero .hero-block {
-    display: flex;
-    justify-content: space-between;
-    gap: 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
 }
 
 #hero .hero-block .description {
-    width: 55%;
-    padding: 0;
-    margin: 0;
+  width: 55%;
+  padding: 0;
+  margin: 0;
 }
 
 #hero .hero-block .description h1 {
-    font-family: Roboto Slab;
-    font-size: 80px;
-    margin: 0;
-    margin-bottom: 20px;
-    line-height: 1em;
+  font-family: Roboto Slab;
+  font-size: 80px;
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 1em;
 }
 
 #hero .hero-block .description p {
-    font-size: 25px;
+  font-size: 25px;
 }
 
-#hero  .hero-block img {
-    position: relative;
-    width: 300px;
+#hero .hero-block img {
+  position: relative;
+  width: 300px;
 }
 
 
 
 #hero .image-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45%;
-    margin-bottom: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  margin-bottom: 40px;
 }
 
 #hero .image-container img {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 #hero .image-container .shadow {
-    position: absolute;
-    background-color: #EFEFEF;
-    border-radius: 50%;
-    aspect-ratio: 22/5;
-    width: 250px;
-    bottom: -20px;
-    left: calc(50% + 20px);
-    transform: translateX(-50%);
+  position: absolute;
+  background-color: #EFEFEF;
+  border-radius: 50%;
+  aspect-ratio: 22/5;
+  width: 250px;
+  bottom: -20px;
+  left: calc(50% + 20px);
+  transform: translateX(-50%);
 }
 
-#hero  {
-    display: flex;
-    flex-direction: column;
+#hero {
+  display: flex;
+  flex-direction: column;
 }
 
 #hero .quote-block {
-    background-color: #1E4681;
-    color: white;
-    padding: 16px;
-    border-radius: 5px;
-    max-width: 400px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+  background-color: #1E4681;
+  color: white;
+  padding: 16px;
+  border-radius: 5px;
+  max-width: 400px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 #hero .quote-block .text {
-    font-family: Roboto Slab;
+  font-family: Roboto Slab;
 }
 
 #hero .quote-block .author {
-    margin-top: 10px;
-    text-align: right;
+  margin-top: 10px;
+  text-align: right;
 }
 
 
 @media (max-width: 991px) {
-    #hero .image-container img {
-        width: 200px;
-    }
+  header .header-logo {
+    width: 64px;
+  }
 
-    #hero .hero-block .description h1 {
-        font-size: 50px;
-    }
+  header .course-info .item {
+    font-size: 18px;
+  }
 
-    #hero .hero-block .description p {
-        font-size: 20px;
-    }
+  header .course-info img {
+    width: 18px;
+  }
 
-    #hero .course-info .item {
-        font-size: 16px;
-    }
+  #hero .image-container img {
+    width: 200px;
+  }
 
-    #hero .image-container .shadow {
-        width: 200px;
-    }
+  #hero .hero-block .description h1 {
+    font-size: 50px;
+  }
+
+  #hero .hero-block .description p {
+    font-size: 20px;
+  }
+
+  #hero .course-info .item {
+    font-size: 16px;
+  }
+
+  #hero .image-container .shadow {
+    width: 200px;
+  }
 
 
-    #hero .quote-block {
-        max-width: 350px;
-    }
+  #hero .quote-block {
+    max-width: 350px;
+  }
 
-    #hero .quote-block .text {
-        font-size: 16px;
-    }
+  #hero .quote-block .text {
+    font-size: 16px;
+  }
 
-    #hero .quote-block .author {
-        font-size: 14px;
-    }
+  #hero .quote-block .author {
+    font-size: 14px;
+  }
 
-    #hero .image-container .shadow {
-        bottom: -15px;
-        width: 230px;
-        height: 40px;
-    }
+  #hero .image-container .shadow {
+    bottom: -15px;
+    width: 230px;
+    height: 40px;
+  }
 
 
 }
 
 @media (max-width: 600px) {
-    #hero .hero-block {
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  header .header-logo{
+    width: 52px;
+  }
 
-    #hero  .hero-block .description h1 {
-        font-size: 40px;
-    }
+  header .course-info .item {
+    font-size: 15px;
+  }
 
-    #hero .image-container .shadow {
-        width: 180px;
-        bottom: -20px;
-        left: auto;
-        right: -10px;
-        transform: translateX(0);
-    }
+  header .course-info img {
+    width: 15px;
+  }
 
-    #hero .hero-block .description p {
-        font-size: 15px;
-    }
+  #hero .hero-block {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #hero .hero-block .description h1 {
+    font-size: 40px;
+  }
+
+  #hero .image-container .shadow {
+    width: 180px;
+    bottom: -20px;
+    left: auto;
+    right: -10px;
+    transform: translateX(0);
+  }
+
+  #hero .hero-block .description p {
+    font-size: 15px;
+  }
 
 
-    #hero .image-container {
-        justify-content: end;
-        width: 100%;
-    }
+  #hero .image-container {
+    justify-content: end;
+    width: 100%;
+  }
 
-    #hero .hero-block .description {
-        width: 100%;
-    }
+  #hero .hero-block .description {
+    width: 100%;
+  }
 
-    #hero .image-container img {
-        margin-top: 10px;
-        width: 180px;
-    }
+  #hero .image-container img {
+    margin-top: 10px;
+    width: 180px;
+  }
 
 
 }
@@ -201,199 +235,199 @@ header  .course-info .item {
 /*service section*/
 #service,
 #format {
-    font-size: .8rem;
+  font-size: .8rem;
 }
 
 #service p {
-    font-family: "Roboto", system-ui;
-    line-height: 1.4rem;
+  font-family: "Roboto", system-ui;
+  line-height: 1.4rem;
 }
 
 #service .title,
 #format .title {
-    font-family: "Roboto Slab", system-ui;
-    padding-bottom: .7em;
-    font-size: 2.4em;
+  font-family: "Roboto Slab", system-ui;
+  padding-bottom: .7em;
+  font-size: 2.4em;
 }
 
 #service .img-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 #service .img-box img {
-    position: relative;
+  position: relative;
 }
 
 #service .upper-box .img-box img {
-    width: 146px;
+  width: 146px;
 }
 
 #service .upper-box {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 #service .upper-box div {
-    width: 100%;
+  width: 100%;
 }
 
 #service .img-box .platform {
-    position: absolute;
-    background-color: #EFEFEF;
-    border-radius: 50%;
-    aspect-ratio: 22/5;
+  position: absolute;
+  background-color: #EFEFEF;
+  border-radius: 50%;
+  aspect-ratio: 22/5;
 }
 
 #service .upper-box .img-box .platform {
-    bottom: -20px;
-    width: 220px;
-    left: 50%;
-    transform: translateX(-50%);
+  bottom: -20px;
+  width: 220px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #service .lower-box .img-box .platform {
-    bottom: -10px;
-    left: 15px;
-    width: 130px;
+  bottom: -10px;
+  left: 15px;
+  width: 130px;
 }
 
 #service .lower-box {
-    margin-top: 50px;
-    display: grid;
-    gap: 1.6rem;
-    grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+  display: grid;
+  gap: 1.6rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 #service .lower-box h3 {
-    font-family: "Roboto Slab", system-ui;
-    font-size: 1.2em;
+  font-family: "Roboto Slab", system-ui;
+  font-size: 1.2em;
 }
 
 #service .lower-box p {
-    font-size: 0.9em;
+  font-size: 0.9em;
 }
 
 #service .lower-box .img-box {
-    display: none;
-    justify-content: start;
+  display: none;
+  justify-content: start;
 }
 
 #service .lower-box .img-box img {
-    width: 146px;
+  width: 146px;
 }
 
 /*format section*/
 #format .box {
-    display: flex;
-    flex-direction: column;
-    gap: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
 }
 
 #format .item {
-    width: 75%;
+  width: 75%;
 }
 
 #format .item h2,
 #format .item p {
-    font-family: "Roboto", system-ui;
+  font-family: "Roboto", system-ui;
 }
 
 #format .item h2 {
-    font-size: 1.2rem;
-    margin-bottom: 3px;
-    color: #1E4681;
+  font-size: 1.2rem;
+  margin-bottom: 3px;
+  color: #1E4681;
 }
 
 #format .item p {
-    font-size: .8rem;
+  font-size: .8rem;
 }
 
 /* Tablet */
 @media (min-width: 601px) {
 
-    #service,
-    #format {
-        font-size: 1rem;
-    }
+  #service,
+  #format {
+    font-size: 1rem;
+  }
 
-    #service .upper-box {
-        flex-direction: row;
-    }
+  #service .upper-box {
+    flex-direction: row;
+  }
 
-    #service .upper-box div {
-        width: 50%;
-    }
+  #service .upper-box div {
+    width: 50%;
+  }
 
-    #service .upper-box .img-box img {
-        width: 186px;
-    }
+  #service .upper-box .img-box img {
+    width: 186px;
+  }
 
-    #service .upper-box .img-box .platform {
-        width: 280px;
-    }
+  #service .upper-box .img-box .platform {
+    width: 280px;
+  }
 
-    #service .lower-box {
-        grid-template-columns: repeat(4, 1fr);
-    }
+  #service .lower-box {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-    #service .lower-box .img-box {
-        display: flex;
-    }
+  #service .lower-box .img-box {
+    display: flex;
+  }
 
-    #format .item {
-        width: calc(100%/3);
-    }
+  #format .item {
+    width: calc(100%/3);
+  }
 
-    #format .box {
-        flex-direction: row;
-    }
+  #format .box {
+    flex-direction: row;
+  }
 }
 
 /* Desktop */
 @media (min-width: 992px) {
 
-    #service,
-    #format {
-        font-size: 1.2rem;
-    }
+  #service,
+  #format {
+    font-size: 1.2rem;
+  }
 
-    #service .upper-box .img-box img {
-        width: 216px;
-    }
+  #service .upper-box .img-box img {
+    width: 216px;
+  }
 
-    #service .upper-box .img-box .platform {
-        width: 300px;
-    }
+  #service .upper-box .img-box .platform {
+    width: 300px;
+  }
 
-    #service .lower-box .img-box img {
-        width: 200px;
-    }
+  #service .lower-box .img-box img {
+    width: 200px;
+  }
 
-    #service .lower-box .img-box .platform {
-        width: 160px;
-        left: 30px;
-        bottom: -15px;
-    }
+  #service .lower-box .img-box .platform {
+    width: 160px;
+    left: 30px;
+    bottom: -15px;
+  }
 
-    #format .item {
-        font-size: 2rem;
-    }
+  #format .item {
+    font-size: 2rem;
+  }
 
-    #format .item p {
-        font-size: 1.3rem;
-    }
+  #format .item p {
+    font-size: 1.3rem;
+  }
 }
 
 /*Fakhri-Part*/
 #faq,
 #testimonials {
-   font-family: Roboto Slab;
+  font-family: Roboto Slab;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -483,7 +517,8 @@ header  .course-info .item {
   text-align: left;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 992px) {
+
   #faq,
   #testimonials {
     display: flex;
@@ -558,7 +593,7 @@ header  .course-info .item {
     gap: 18px;
   }
 
-  .testimonials-card-bottom > img {
+  .testimonials-card-bottom>img {
     width: 110px;
   }
 
@@ -574,6 +609,7 @@ header  .course-info .item {
     line-height: 17.24px;
     text-align: left;
   }
+
   .testimonials-card-content img {
     width: 20px;
   }
@@ -586,6 +622,7 @@ header  .course-info .item {
 }
 
 @media screen and (max-width: 375px) {
+
   #faq,
   #testimonials {
     display: flex;
@@ -660,7 +697,7 @@ header  .course-info .item {
     gap: 18px;
   }
 
-  .testimonials-card-bottom > img {
+  .testimonials-card-bottom>img {
     width: 80px;
   }
 
@@ -676,6 +713,7 @@ header  .course-info .item {
     line-height: 14.19px;
     text-align: left;
   }
+
   .testimonials-card-content img {
     width: 20px;
   }
@@ -683,88 +721,93 @@ header  .course-info .item {
 
 /*Lamia-Part*/
 
- #card-section{
-    font-family: "Roboto", sans-serif;
+#card-section {
+  font-family: "Roboto", sans-serif;
 }
 
-#card-section .cards-box{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-#card-section .card{
-    -webkit-box-shadow: 3px 2px 29px 0px rgba(191,185,191,1);
-    -moz-box-shadow: 3px 2px 29px 0px rgba(191,185,191,1);
-    box-shadow: 3px 2px 29px 0px rgba(191,185,191,1);
-    display: flex;
-    flex-direction: column;
-    border-radius: 10%;
+#card-section .cards-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
-#card-section .cardimage{
-    width: 100%;
+#card-section .card {
+  -webkit-box-shadow: 3px 2px 29px 0px rgba(191, 185, 191, 1);
+  -moz-box-shadow: 3px 2px 29px 0px rgba(191, 185, 191, 1);
+  box-shadow: 3px 2px 29px 0px rgba(191, 185, 191, 1);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10%;
 }
 
-#card-section .cardimage img{
-    width: 100%;
-    object-fit: cover;
+#card-section .cardimage {
+  width: 100%;
 }
 
-#card-section .card-text{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-}
-#card-section .name{
-    font-size: 55px;
-    font-weight: bold;
-    font-family: "Roboto Slab", serif;
-    margin-bottom: 10px;
-    padding-bottom: 50px;
-}
-#card-section .p{
-    font-size: 25px;
+#card-section .cardimage img {
+  width: 100%;
+  object-fit: cover;
 }
 
-#card-section .h{
-    font-weight: bold;
-    font-size: 30px;
+#card-section .card-text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+#card-section .name {
+  font-size: 55px;
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 10px;
+  padding-bottom: 50px;
+}
+
+#card-section .p {
+  font-size: 25px;
+}
+
+#card-section .h {
+  font-weight: bold;
+  font-size: 30px;
 }
 
 /* Planşet */
 @media screen and (max-width:991px) {
-    #card-section .p {
-        font-size: 14px;
-    }
+  #card-section .p {
+    font-size: 14px;
+  }
 
-    #card-section .h {
-        font-size: 17px;
-    }
-    #card-section .name{
-        font-size: 45px;
-    }
+  #card-section .h {
+    font-size: 17px;
+  }
+
+  #card-section .name {
+    font-size: 45px;
+  }
 }
 
 /* Mobile */
 @media screen and (min-width:0px) and (max-width:600px) {
-    #card-section .p {
-        font-size: 18px;
-        padding-top: 20px;
-    }
+  #card-section .p {
+    font-size: 18px;
+    padding-top: 20px;
+  }
 
-    #card-section .h {
-        font-size: 21px;
-    }
+  #card-section .h {
+    font-size: 21px;
+  }
 
-    #card-section .cards-box {
-        grid-template-columns: 1fr;
-    }
-    #card-section .name{
-        font-size: 30px;
-    }
+  #card-section .cards-box {
+    grid-template-columns: 1fr;
+  }
+
+  #card-section .name {
+    font-size: 30px;
+  }
 }
 
 /* -----------F I R S T----------F O O T E R ------------- */
@@ -774,19 +817,22 @@ header  .course-info .item {
   background-color: #9dc9c8;
   width: 100%;
 }
+
 .contact-container {
   padding: 100px 0;
   display: flex;
   flex-direction: column;
   gap: 54px;
 }
-.contact-container > h1 {
+
+.contact-container>h1 {
   font-family: Roboto Slab;
   font-size: 55px;
   font-weight: 700;
   line-height: 55.76px;
   text-align: left;
 }
+
 .contact-levels {
   display: flex;
   gap: 70px;
@@ -806,6 +852,7 @@ header  .course-info .item {
   line-height: 18.25px;
   text-align: left;
 }
+
 .contact-level h4 {
   font-family: Roboto;
   font-size: 25px;
@@ -813,6 +860,7 @@ header  .course-info .item {
   line-height: 25.35px;
   text-align: left;
 }
+
 .contact-content h1 {
   font-family: Roboto;
   font-size: 25px;
@@ -820,6 +868,7 @@ header  .course-info .item {
   line-height: 25.35px;
   text-align: left;
 }
+
 .contact-content p {
   font-family: Roboto;
   font-size: 80px;
@@ -855,10 +904,12 @@ footer {
   flex-direction: column;
   gap: 30px;
 }
+
 .footer-socials {
   display: flex;
   gap: 18px;
 }
+
 .footer-social {
   list-style: none;
 }
@@ -874,6 +925,7 @@ footer {
   align-items: center;
   gap: 22px;
 }
+
 .footer-right-row span {
   font-family: Roboto;
   font-size: 25px;
@@ -881,6 +933,7 @@ footer {
   line-height: 25.35px;
   text-align: left;
 }
+
 .footer-right-row img {
   width: 27px;
 }
@@ -893,7 +946,7 @@ footer {
   text-align: left;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 991px) {
   #contact {
     display: flex;
     justify-content: center;
@@ -907,13 +960,15 @@ footer {
     flex-direction: column;
     gap: 54px;
   }
-  .contact-container > h1 {
+
+  .contact-container>h1 {
     font-family: Roboto Slab;
     font-size: 32px;
     font-weight: 700;
     line-height: 32.44px;
     text-align: left;
   }
+
   .contact-levels {
     display: flex;
     gap: 70px;
@@ -933,6 +988,7 @@ footer {
     line-height: 10.14px;
     text-align: left;
   }
+
   .contact-level h4 {
     font-family: Roboto;
     font-size: 14px;
@@ -940,6 +996,7 @@ footer {
     line-height: 14.19px;
     text-align: left;
   }
+
   .contact-content h1 {
     font-family: Roboto;
     font-size: 25px;
@@ -947,6 +1004,7 @@ footer {
     line-height: 25.35px;
     text-align: left;
   }
+
   .contact-content p {
     font-family: Roboto;
     font-size: 46px;
@@ -982,10 +1040,12 @@ footer {
     flex-direction: column;
     gap: 30px;
   }
+
   .footer-socials {
     display: flex;
     gap: 18px;
   }
+
   .footer-social {
     list-style: none;
   }
@@ -1001,6 +1061,7 @@ footer {
     align-items: center;
     gap: 22px;
   }
+
   .footer-right-row span {
     font-family: Roboto;
     font-size: 14px;
@@ -1008,6 +1069,7 @@ footer {
     line-height: 14.19px;
     text-align: left;
   }
+
   .footer-right-row img {
     width: 27px;
   }
@@ -1023,7 +1085,7 @@ footer {
 
 /* R E S P O N S I V E ------ M O B I L E */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #contact {
     display: flex;
     justify-content: center;
@@ -1037,13 +1099,15 @@ footer {
     flex-direction: column;
     gap: 35px;
   }
-  .contact-container > h1 {
+
+  .contact-container>h1 {
     font-family: Roboto Slab;
     font-size: 26px;
     font-weight: 700;
     line-height: 26.36px;
     text-align: left;
   }
+
   .contact-levels {
     display: flex;
     gap: 40px;
@@ -1063,6 +1127,7 @@ footer {
     line-height: 10.14px;
     text-align: left;
   }
+
   .contact-level h4 {
     font-family: Roboto;
     font-size: 12px;
@@ -1070,6 +1135,7 @@ footer {
     line-height: 12.17px;
     text-align: left;
   }
+
   .contact-content h1 {
     font-family: Roboto;
     font-size: 12px;
@@ -1077,6 +1143,7 @@ footer {
     line-height: 12.17px;
     text-align: left;
   }
+
   .contact-content p {
     font-family: Roboto;
     font-size: 37px;
@@ -1098,6 +1165,7 @@ footer {
   .footer-image img {
     width: 54px;
   }
+
   .footer-social img {
     width: 15px;
   }
@@ -1121,10 +1189,12 @@ footer {
     flex-direction: column;
     gap: 10px;
   }
+
   .footer-socials {
     display: flex;
     gap: 18px;
   }
+
   .footer-social {
     list-style: none;
   }
@@ -1140,6 +1210,7 @@ footer {
     align-items: center;
     gap: 22px;
   }
+
   .footer-right-row span {
     font-family: Roboto;
     font-size: 12px;
@@ -1147,9 +1218,11 @@ footer {
     line-height: 12.17px;
     text-align: left;
   }
+
   .footer-right-row img {
     width: 13px;
   }
+
   .footer-bottom {
     font-family: Roboto;
     font-size: 10px;
